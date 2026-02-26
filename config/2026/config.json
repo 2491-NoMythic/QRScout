@@ -752,9 +752,9 @@
           "required": true,
           "code": "VersionID",
           "formResetBehavior": "preserve",
-          "defaultValue": "22626",
+          "defaultValue": "2/26/26.1",
           "choices": {
-            "0": "22626"
+            "0": "2/26/26.1"
           }}
       ]
     }
