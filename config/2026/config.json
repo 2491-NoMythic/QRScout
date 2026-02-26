@@ -744,7 +744,18 @@
           "code": "dto",
           "formResetBehavior": "reset",
           "defaultValue": false
-        }
+        },
+        {
+          "title": "Version ID",
+          "description": "To check which version of the form this is.",
+          "type": "select",
+          "required": true,
+          "code": "VersionID",
+          "formResetBehavior": "preserve",
+          "defaultValue": "22626",
+          "choices": {
+            "0": "22626"
+          }}
       ]
     }
   ]
