@@ -312,7 +312,7 @@
           "required": false,
           "code": "CenterLineAuto",
           "formResetBehavior": "reset",
-          "defaultValue": "",
+          "defaultValue": "No",
           "choices": {
             "No": "No",
             "Partially": "Partially",
@@ -326,7 +326,7 @@
           "required": false,
           "code": "ClimbAuto",
           "formResetBehavior": "reset",
-          "defaultValue": "",
+          "defaultValue": "No",
           "choices": {
             "No": "No",
             "Fail": "Tried and Failed",
@@ -401,7 +401,6 @@
           "code": "PassingTele",
           "formResetBehavior": "reset",
           "choices": {
-            "None": "No passing",
             "Neutral-Alliance": "Neutral Zone to Alliance Zone",
             "Oppo-Neutral": "Opponent Zone to Neutral Zone",
             "Oppo-Alliance": "Opponent Zone to Alliance Zone"
@@ -753,9 +752,9 @@
           "required": true,
           "code": "VersionID",
           "formResetBehavior": "preserve",
-          "defaultValue": "0",
+          "defaultValue": "3/5/26.2",
           "choices": {
-            "0": "3/5/26.1"
+            "3/5/26.2": "3/5/26.2"
           }}
       ]
     }
