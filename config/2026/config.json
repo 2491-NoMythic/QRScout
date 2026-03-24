@@ -145,10 +145,9 @@
             "3407": "3407 - Wild Cards",
             "3454": "3454 - Z Bots",
             "3745": "3745 - Governors",
-            "3871": "3871 - THE Trojan Robotics",
-            "3880": "3880 - Tiki Techs",
+            "3871": "3871 - Trojan Robotics",
             "3926": "3926 - MPArors",
-            "4009": "4009 - DNA Robotics",
+            "4009": "4009 - Duluth DNA Robotics",
             "4174": "4174 - Mustang Robotics",
             "4207": "4207 - PyroBotics",
             "4215": "4215 - TRIBOTS",
@@ -165,7 +164,7 @@
             "4859": "4859 - The CyBears",
             "5143": "5143 - Raw Steel",
             "5278": "5278 - Los Clasicos",
-            "5690": "5690 - SubZero Robotics",
+            "5872": "5872 - Wiredcats",
             "5929": "5929 - Raider Robotics",
             "7019": "7019 - Rubber Ducks",
             "7068": "7068 - Mechanical Masterminds",
@@ -174,7 +173,9 @@
             "7849": "7849 - Da Vinci's Creation",
             "7850": "7850 - Bio-Bots",
             "8234": "8234 - Panthinators",
-            "8422": "8422 - Husky Howlers"
+            "8422": "8422 - Husky Howlers",
+            "11223": "11223 - The Whistlepunks",
+            "0000": "Unknown Team - Unable to tell which robot"
           }
         },
         {
@@ -372,31 +373,16 @@
       "name": "Teleop-General 2",
       "fields": [
         {
-          "title": "Defense Type",
-          "description": "Did the robot engage in any types of defense? Disruption: using the robot against the opposing alliance to disrupt or limit their ability to score. Fuel stealing: picking up fuel on the ground of the opposing alliance zone. Blocking Trenches: using the robot to limit movement via the trenches. Blocking bumps: using the robot to limit movement via the bumps.",
+          "title": "Bump and/or Trench",
+          "description": "Did the robot move over the bump or under the trench?",
           "type": "multi-select",
           "required": false,
-          "code": "DefenseTypeTele",
+          "code": "BumpOrTrenchTele",
           "formResetBehavior": "reset",
           "choices": {
-            "Disruption": "Disrupting Shots",
-            "Fuel stealing": "Fuel Stealing",
-            "Blocking Trenches": "Blocking Trenches",
-            "Blocking Bumps": "Blocking Bumps",
-            "Blocking Shots": "Blocking Shots"
+            "Bump": "Bump",
+            "Trench": "Trench"
           }
-        },
-        {
-          "title": "Defense Skill",
-          "description": "-10: Actively detrimental (many penalties) ------------------------------------ 0: Neither beneficial nor harmful ---------------------------------------------- 10: Minorly disrupts multiple robots/moderately hampers one robot ------- 20: Moderately disrupts multiple robots/severely hampers one robot ------ 30: Severely disrupts multiple robots/entirely shuts down one robot",
-          "type": "range",
-          "required": false,
-          "code": "DefenseSkillTele",
-          "formResetBehavior": "reset",
-          "defaultValue": 0,
-          "min": -10,
-          "max": 30,
-          "step": 1
         }
       ]
     },
@@ -437,15 +423,16 @@
           }
         },
         {
-          "title": "Bump and/or Trench",
-          "description": "Did the robot move over the bump or under the trench?",
+          "title": "Passing Type",
+          "description": "How did the robot pass any fuel from one zone to another?",
           "type": "multi-select",
           "required": false,
-          "code": "BumpOrTrenchTele",
+          "code": "PassingTypeTele",
           "formResetBehavior": "reset",
           "choices": {
-            "Bump": "Bump",
-            "Trench": "Trench"
+            "Passing NZ": "Shoot-Passing from Neutral Zone",
+            "Passing AZ": "Full Field Shoot-Passing",
+            "Shoveling": "Shoveling"
           }
         }
       ]
@@ -717,7 +704,7 @@
           "formResetBehavior": "preserve",
           "defaultValue": "0",
           "choices": {
-            "0": "3/19/26.1"
+            "0": "3/24/26.1"
           }
         }
       ]
