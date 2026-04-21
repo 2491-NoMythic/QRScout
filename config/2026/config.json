@@ -219,6 +219,15 @@
           }
         },
         {
+          "title": "Major Mechanism Broken Before Match",
+          "description": "Did the robot have a major mechanism broken before the match started? (eg: Hopper, Intake, Drivetrain.)",
+          "type": "boolean",
+          "required": false,
+          "code": "broken",
+          "formResetBehavior": "reset",
+          "defaultValue": false
+        },
+        {
           "title": "Preloaded Fuel",
           "description": "The number fuel preloaded in the robot.",
           "type": "counter",
@@ -308,12 +317,13 @@
           "title": "Neutral Zone Entered",
           "description": "How did the robot enter the neutral zone during Auto?",
           "type": "multi-select",
-          "required": false,
+          "required": true,
           "code": "AutoNeutralEntry",
           "formResetBehavior": "reset",
           "choices": {
             "Bump": "Via Bump",
-            "Trench": "Via Trench"
+            "Trench": "Via Trench",
+            "Nopesies": "Not At All"
           }
         },
         {
@@ -487,7 +497,7 @@
           "formResetBehavior": "reset",
           "defaultValue": 0,
           "min": 0,
-          "step": 5
+          "step": 2
         },
         {
           "title": "Shooting Cycles",
@@ -525,7 +535,7 @@
           "formResetBehavior": "reset",
           "defaultValue": 0,
           "min": 0,
-          "step": 5
+          "step": 2
         },
         {
           "title": "Shooting Cycles",
@@ -563,7 +573,7 @@
           "formResetBehavior": "reset",
           "defaultValue": 0,
           "min": 0,
-          "step": 5
+          "step": 2
         },
         {
           "title": "Shooting Cycles",
@@ -601,7 +611,7 @@
           "formResetBehavior": "reset",
           "defaultValue": 0,
           "min": 0,
-          "step": 5
+          "step": 2
         },
         {
           "title": "Shooting Cycles",
@@ -704,7 +714,7 @@
           "formResetBehavior": "preserve",
           "defaultValue": "0",
           "choices": {
-            "0": "3/24/26.1"
+            "0": "4/21/26.1"
           }
         }
       ]
