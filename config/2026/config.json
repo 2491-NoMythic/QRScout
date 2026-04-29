@@ -79,12 +79,9 @@
           "formResetBehavior": "preserve",
           "defaultValue": "",
           "choices": {
-            "The Robettes": "2177 - The Robettes",
             "NoMythic": "2491 - NoMythic",
-            "BEASTBOT": "2855 - BEASTBOT",
-            "MPArors": "3926 - MPArors",
-            "Trinity TRIBOTS": "4215 - Trinity TRIBOTS",
-            "Minutebots": "4536 - Minutebots"
+            "Chicken Bot Pie": "3082 - Chicken Bot Pie",
+            "Iron Mosquitos": "5653 - Iron Mosquitos"
           }
         },
         {
@@ -124,6 +121,8 @@
           "formResetBehavior": "reset",
           "defaultValue": "",
           "choices": {
+            "16": "16 - Bomb Squad",
+            "51": "51 - Wings of Fire",
             "111": "111 - WildStang",
             "364": "364 - Team Fusion 364",
             "449": "449 - The Blair Robot Project",
@@ -736,7 +735,7 @@
           "formResetBehavior": "preserve",
           "defaultValue": "0",
           "choices": {
-            "0": "4/28/26.1"
+            "0": "4/29/26.1"
           }
         }
       ]
