@@ -81,7 +81,7 @@
           "choices": {
             "NoMythic": "2491 - NoMythic",
             "Chicken Bot Pie": "3082 - Chicken Bot Pie",
-            "Iron Mosquitos": "5653 - Iron Mosquitos"
+            "MPArors": "3926 - MPArors"
           }
         },
         {
@@ -257,13 +257,14 @@
           "title": "Pick Up Location (Auto)",
           "description": "Where did the robot pick up fuel from during Auto?",
           "type": "multi-select",
-          "required": false,
+          "required": true,
           "code": "AutoPickupLocations",
           "formResetBehavior": "reset",
           "choices": {
             "Depot": "Depot",
             "Outpost": "Outpost",
-            "Neutral": "Neutral Zone"
+            "Neutral": "Neutral Zone",
+            "": "None"
           }
         },
         {
@@ -299,7 +300,7 @@
           "title": "Neutral Zone Entered",
           "description": "How did the robot enter the neutral zone during Auto?",
           "type": "multi-select",
-          "required": true,
+          "required": false,
           "code": "AutoNeutralEntry",
           "formResetBehavior": "reset",
           "choices": {
@@ -696,7 +697,7 @@
           "formResetBehavior": "preserve",
           "defaultValue": "0",
           "choices": {
-            "0": "5/9/26.1"
+            "0": "5/12/26.1"
           }
         }
       ]
